@@ -102,4 +102,4 @@ docker run --env-file /root/elixir/validator.env --platform linux/amd64 -p 17690
 - Search for the node wallet address
 - Stake the mock tokens on your validator.
 
-## Join our TG for More updates on Elixir : https://t.me/cryptoconsolchat
+**Join our TG for More updates on Elixir** : https://t.me/cryptoconsol
