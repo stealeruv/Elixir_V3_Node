@@ -76,9 +76,11 @@ Ctrl+X - they press Y - Enter
 
 ### Faucet
 
-Get sepolia Eth from faucet or send it from another wallet
-You need to have 0.001 Eth on mainnet
+Get sepolia Eth from faucet or send it from another wallet.
+
 Faucet link : https://www.alchemy.com/faucets/ethereum-sepolia
+
+You need to have 0.001 Eth on mainnet.
 
 ### Docker pull
 
