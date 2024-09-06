@@ -22,17 +22,21 @@ Elixir is a modular DPoS network built to power liquidity on orderbook exchanges
 
 ### Requirements
 
-| Requirement                  | Description                         |
+| **Requirement**              | **Description**                     |
 |------------------------------|-------------------------------------|
 | Operating System             | Ubuntu 22.04 or newer               |
 | Memory (RAM)                 | Minimum 8 GB                        |
 | Disk Space                   | Minimum 100 GB of free disk space   |
 | Bandwidth                    | 100Mbit/s                           |
 
+### Install Dependencies
+
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y curl git jq lz4 build-essential unzip
 ```
+### Install Docker
+Ignore if you already Installed
 
 ```
 sudo apt install -y ca-certificates curl gnupg lsb-release
@@ -42,13 +46,19 @@ sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER
 newgrp docker
 ```
+### Make a Directory for Elixir
 ```
 mkdir elixir && cd elixir
 wget https://files.elixir.finance/validator.env
 ```
+### Install Nano
+Ignore if already installed
+
 ```
 sudo apt install nano
 ```
+### Edit .env file
+
 ```
 nano validator.env
 ```
@@ -61,9 +71,30 @@ SIGNER_PRIVATE_KEY : Private key from the new wallet
 
 Ctrl+X - they press Y - Enter
 
+### Faucet
+
+Get sepolia Eth from faucet or send it from another wallet
+You need to have 0.001 Eth on mainnet
+Faucet link : https://www.alchemy.com/faucets/ethereum-sepolia
+
+### Docker pull
+
 ```
 docker pull elixirprotocol/validator:v3 --platform linux/amd64
 ```
+
+### Start the Node
+
 ```
 docker run --env-file /root/elixir/validator.env --platform linux/amd64 -p 17690
 ```
+
+### Mint Mock
+
+- Visit Testnet staking : https://testnet-3.elixir.xyz/ ( you can use any wallet for this purpose)
+- Mint mock tokens 
+- Click on Custom validator
+- Search for the node wallet address
+- Stake the mock tokens on your validator.
+
+## Join our TG for More updates on Elixir : https://t.me/cryptoconsolchat
