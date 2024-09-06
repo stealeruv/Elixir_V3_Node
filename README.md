@@ -65,9 +65,12 @@ nano validator.env
 
 Create a new and dedicated wallet using metamask. Don't use old wallet.
 
-STRATEGY_EXECUTOR_DISPLAY_NAME :Enter name for your Node 
+STRATEGY_EXECUTOR_DISPLAY_NAME :Enter name for your Node
+
 STRATEGY_EXECUTOR_BENEFICIARY : Enter the wallet address here
+
 SIGNER_PRIVATE_KEY : Private key from the new wallet
+
 
 Ctrl+X - they press Y - Enter
 
