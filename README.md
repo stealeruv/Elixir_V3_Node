@@ -107,4 +107,31 @@ docker run -d \
 - Search for the node wallet address
 - Stake the mock tokens on your validator.
 
+### Check Logs
+```
+docker logs -f elixir
+```
+### Check Health Status
+```
+curl 127.0.0.1:17690/health | jq
+```
+
+Get OK
+
+## UseFul Commands
+
+**Upgrading Node**
+```
+docker kill elixir
+docker rm elixir
+docker pull elixirprotocol/validator:v3 --platform linux/amd64
+```
+```
+docker run -d \
+  --env-file ./validator.env \
+  --name elixir \
+  --restart unless-stopped \
+  -p 17690:17690 \
+  elixirprotocol/validator:v3
+```
 **Join our TG for More updates on Elixir** : https://t.me/cryptoconsol
