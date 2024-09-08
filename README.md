@@ -101,13 +101,13 @@ docker run -d \
 
 ### Mint Mock
 
-- Visit : https://www.elixir.xyz/apothecary
-- Connect to validator Wizard ( Watch the video)
 - Visit Testnet staking : https://testnet-3.elixir.xyz/ ( you can use any wallet for this purpose)
 - Mint mock tokens 
 - Click on Custom validator
 - Search for the node wallet address
 - Stake the mock tokens on your validator.
+- Visit : https://www.elixir.xyz/apothecary
+- Connect to validator Wizard ( Watch the video)
 
 ### Check Logs
 ```
