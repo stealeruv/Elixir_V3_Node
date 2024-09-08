@@ -91,7 +91,12 @@ docker pull elixirprotocol/validator:v3 --platform linux/amd64
 ### Start the Node
 
 ```
-docker run --env-file /root/elixir/validator.env --platform linux/amd64 -p 17690
+docker run -d \
+  --env-file ./validator.env \
+  --name elixir \
+  --restart unless-stopped \
+  -p 17690:17690 \
+  elixirprotocol/validator:v3
 ```
 
 ### Mint Mock
