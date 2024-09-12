@@ -129,11 +129,18 @@ docker rm elixir
 docker pull elixirprotocol/validator:v3 --platform linux/amd64
 ```
 ```
+cd elixir
+```
+```
 docker run -d \
   --env-file ./validator.env \
   --name elixir \
   --restart unless-stopped \
   -p 17690:17690 \
   elixirprotocol/validator:v3
+```
+Check logs
+```
+docker logs -f elixir
 ```
 **Join our TG for More updates on Elixir** : https://t.me/cryptoconsol
